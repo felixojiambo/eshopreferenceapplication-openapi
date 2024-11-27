@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\identity-service\\IdentityService.csproj": {}
+    "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\order-service\\OrderService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\identity-service\\IdentityService.csproj": {
+    "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\order-service\\OrderService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\identity-service\\IdentityService.csproj",
-        "projectName": "IdentityService",
-        "projectPath": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\identity-service\\IdentityService.csproj",
+        "projectUniqueName": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\order-service\\OrderService.csproj",
+        "projectName": "OrderService",
+        "projectPath": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\order-service\\OrderService.csproj",
         "packagesPath": "C:\\Users\\OjiamboFelix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\identity-service\\obj\\",
+        "outputPath": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\services\\order-service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,10 +53,6 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.10, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[9.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
