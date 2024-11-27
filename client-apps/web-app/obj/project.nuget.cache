@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PGzLsJnYXFg=",
+  "dgSpecHash": "9fc5gugJa4APDcn0MBO5JMQ7tyE3sQcf1q/6V2TxVEHlqA9foVClq5c50v9h01iKvoDDJ2px05hKoTywkdOBNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\WebApp.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,7 @@
     "C:\\Users\\OjiamboFelix\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\OjiamboFelix\\.nuget\\packages\\microsoft.jsinterop\\8.0.10\\microsoft.jsinterop.8.0.10.nupkg.sha512",
     "C:\\Users\\OjiamboFelix\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.10\\microsoft.jsinterop.webassembly.8.0.10.nupkg.sha512",
-    "C:\\Users\\OjiamboFelix\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.10\\microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
+    "C:\\Users\\OjiamboFelix\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.8\\microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
     "C:\\Users\\OjiamboFelix\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.10\\microsoft.net.sdk.webassembly.pack.8.0.10.nupkg.sha512",
     "C:\\Users\\OjiamboFelix\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\OjiamboFelix\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.10\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.10.nupkg.sha512"
