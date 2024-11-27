@@ -1,0 +1,6 @@
+@MobileBFF_HostAddress = http://localhost:5203
+
+GET {{MobileBFF_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
