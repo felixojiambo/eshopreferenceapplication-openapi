@@ -1,0 +1,11 @@
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\bin\Debug\net8.0\Observability.deps.json
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\bin\Debug\net8.0\Observability.dll
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\bin\Debug\net8.0\Observability.pdb
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\obj\Debug\net8.0\Observability.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\obj\Debug\net8.0\Observability.AssemblyInfoInputs.cache
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\obj\Debug\net8.0\Observability.AssemblyInfo.cs
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\obj\Debug\net8.0\Observability.csproj.CoreCompileInputs.cache
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\obj\Debug\net8.0\Observability.dll
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\obj\Debug\net8.0\refint\Observability.dll
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\obj\Debug\net8.0\Observability.pdb
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\observability\obj\Debug\net8.0\ref\Observability.dll

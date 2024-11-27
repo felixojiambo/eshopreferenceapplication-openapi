@@ -1,0 +1,11 @@
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\bin\Debug\net8.0\EventBus.deps.json
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\bin\Debug\net8.0\EventBus.dll
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\bin\Debug\net8.0\EventBus.pdb
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\obj\Debug\net8.0\EventBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\obj\Debug\net8.0\EventBus.AssemblyInfoInputs.cache
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\obj\Debug\net8.0\EventBus.AssemblyInfo.cs
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\obj\Debug\net8.0\EventBus.csproj.CoreCompileInputs.cache
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\obj\Debug\net8.0\EventBus.dll
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\obj\Debug\net8.0\refint\EventBus.dll
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\obj\Debug\net8.0\EventBus.pdb
+C:\Users\OjiamboFelix\OneDrive - sbsl.co.ke\Desktop\zep\eshop\shared\event-bus\obj\Debug\net8.0\ref\EventBus.dll

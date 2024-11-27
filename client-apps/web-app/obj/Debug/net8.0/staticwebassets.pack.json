@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\obj\\Debug\\net8.0\\compressed\\puvxkkhn30.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApp.styles.css",
+      "PackagePath": "staticwebassets\\WebApp.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\OjiamboFelix\\OneDrive - sbsl.co.ke\\Desktop\\zep\\eshop\\client-apps\\web-app\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebApp.props",
+      "PackagePath": "build\\WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebApp.props",
+      "PackagePath": "buildTransitive\\WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
