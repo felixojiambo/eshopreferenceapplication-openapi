@@ -1,152 +1,267 @@
-eShop Solution
+# eShop Microservices Architecture
 
-Overview
+## Table of Contents
+- [Introduction](#introduction)
+- [Architecture Overview](#architecture-overview)
+- [Services](#services)
+  - [Identity Service](#identity-service)
+  - [Catalog Service](#catalog-service)
+  - [Order Service](#order-service)
+  - [Basket Service](#basket-service)
+  - [Payment Service](#payment-service)
+  - [Webhook Service](#webhook-service)
+- [Client Applications](#client-applications)
+  - [Mobile BFF (Backend for Frontend)](#mobile-bff-backend-for-frontend)
+  - [Web App](#web-app)
+- [Shared Libraries](#shared-libraries)
+  - [Event Bus](#event-bus)
+  - [Observability](#observability)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup Instructions](#setup-instructions)
+- [Project Structure](#project-structure)
+- [API Documentation](#api-documentation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-The eShop project is a modular e-commerce platform designed to demonstrate a modern microservices architecture. It includes a suite of backend services, client applications, and shared libraries, all managed within a .NET solution.
+---
 
-Solution Structure
+## Introduction
 
-The project is organized as follows:
+Welcome to the **eShop** project—a scalable and maintainable e-commerce platform built using a **microservices architecture**. This system is designed to handle various aspects of an online store, including user authentication, product management, order processing, shopping cart functionality, payment processing, and more.
 
-1. Backend Services
+---
 
-Identity Service: Manages user authentication and authorization.
+## Architecture Overview
 
-Catalog Service: Handles product listing and search functionality.
+The eShop system is divided into multiple independent services, each responsible for a specific domain. This modular approach ensures scalability, ease of maintenance, and flexibility in deploying and updating individual components without affecting the entire system.
 
-Basket Service: Provides shopping cart management.
+<img width="612" alt="e" src="https://github.com/user-attachments/assets/d7598dda-cf50-4cc6-9e9c-8ab0af998e0e">
 
-Order Service: Processes orders and manages the order lifecycle.
+## Services
 
-Payment Service: Handles payment processing.
+### 1. Identity Service
 
-Webhook Service: Integrates with external systems for notifications.
+**Directory**: `services/identity-service`
 
-2. Client Applications
+**Purpose**: Handles user authentication, authorization, and management. This service manages user registration, login, profile updates, role assignments, and security mechanisms like JWT tokens.
 
-Mobile BFF: Backend for frontend that aggregates data for mobile apps.
+**Key Features**:
+- User Registration and Login
+- JWT Authentication
+- Role-Based Access Control (RBAC)
+- User Profile Management
+- Password Hashing with BCrypt
+- Integration with PostgreSQL
 
-Web App: Blazor WebAssembly project for the e-commerce frontend.
+### 2. Catalog Service
 
-3. Shared Libraries
+**Directory**: `services/catalog-service`
 
-Event Bus: Implements an event-driven architecture using RabbitMQ.
+**Purpose**: Manages the product catalog, including product listing, searching, and categorization. This service allows administrators to add, update, or remove products.
 
-Observability: Provides centralized logging and metrics.
+**Key Features**:
+- CRUD Operations for Products
+- Product Search and Filtering
+- Integration with PostgreSQL
+- Caching with Redis (optional)
 
-Prerequisites
+### 3. Order Service
 
-.NET 6 or later
+**Directory**: `services/order-service`
 
-Docker (for containerization)
+**Purpose**: Manages order processing and tracking. Handles order creation, status updates, and history retrieval.
 
-RabbitMQ (message broker)
+**Key Features**:
+- Create and Manage Orders
+- Order Tracking
+- Integration with PostgreSQL
+- Event-Driven Communication with Event Bus
 
-PostgreSQL (database)
+### 4. Basket Service
 
-Redis (for caching)
+**Directory**: `services/basket-service`
 
-Prometheus and Grafana (for observability)
+**Purpose**: Manages user shopping carts, allowing users to add, update, or remove items before checkout.
 
-Git (for version control)
+**Key Features**:
+- Add/Remove Items to/from Basket
+- Retrieve Basket Details
+- Integration with Redis for Fast Access
 
-Setup Instructions
+### 5. Payment Service
 
-Step 1: Clone the Repository
+**Directory**: `services/payment-service`
 
-git clone (https://github.com/felixojiambo/eshopreferenceapplication-openapi)
+**Purpose**: Handles payment processing, integrating with payment gateways like Stripe or PayPal to process transactions securely.
 
-cd eshopreferenceapplication-openapi
+**Key Features**:
+- Payment Initiation and Processing
+- Payment Status Tracking
+- Integration with Payment Gateways
+- Webhook Handling for Asynchronous Events
 
-Step 2: Build the Solution
+### 6. Webhook Service
 
-dotnet build eShop.sln
+**Directory**: `services/webhook-service`
 
-Step 3: Run Services Locally
+**Purpose**: Handles incoming and outgoing webhook events for integrations with third-party services, such as sending notifications or triggering workflows.
 
-Use Docker Compose for local development:
+**Key Features**:
+- Register and Manage Webhooks
+- Receive and Process Webhook Events
+- Secure Webhook Endpoints
 
-docker-compose up
+---
 
-Step 4: Run Tests
+## Client Applications
 
-Unit tests can be executed with the following command:
+### 1. Mobile BFF (Backend for Frontend)
 
-dotnet test
+**Directory**: `client-apps/mobile-bff`
 
-Development Guide
+**Purpose**: Serves as an intermediary between the mobile application and backend services, aggregating and simplifying API responses tailored for mobile clients.
 
-1. Adding a New Service
+**Key Features**:
+- Aggregated API Endpoints for Mobile
+- Authentication and Authorization Handling
+- Optimized Data Retrieval for Mobile Performance
 
-Create a new Web API project:
+### 2. Web App
 
-dotnet new webapi -n NewService -o services/new-service
+**Directory**: `client-apps/web-app`
 
-Add it to the solution:
+**Purpose**: A Blazor WebAssembly-based web application providing a responsive and interactive user interface for browsing products, managing the basket, and processing orders.
 
-dotnet sln eShop.sln add services/new-service/NewService.csproj
+**Key Features**:
+- Product Browsing and Searching
+- Shopping Cart Management
+- User Authentication and Profile Management
+- Order Checkout and History
 
-Commit the changes:
+---
 
-git add .
-git commit -m "Add NewService to the solution"
+## Shared Libraries
 
-2. API Documentation
+### 1. Event Bus
 
-Swagger is enabled by default for all services. Access it at /swagger on each service's base URL.
+**Directory**: `shared/event-bus`
 
-3. Event-Driven Communication
+**Purpose**: Facilitates event-driven communication between microservices using RabbitMQ, enabling decoupled and scalable interactions.
 
-Use RabbitMQ to publish and subscribe to domain events.
+**Key Features**:
+- Publish and Subscribe to Events
+- Event Handling Infrastructure
+- Integration with RabbitMQ
 
-Add new events to the Event Bus shared library.
+### 2. Observability
 
-Deployment
+**Directory**: `shared/observability`
 
-1. Containerization
+**Purpose**: Provides centralized logging, monitoring, and tracing capabilities to ensure system reliability and ease of debugging.
 
-Each service includes a Dockerfile.
+**Key Features**:
+- Logging with Serilog or ELK Stack
+- Metrics Collection with Prometheus
+- Visualization with Grafana
+- Distributed Tracing with OpenTelemetry
 
-Build and run containers individually or with Docker Compose.
+---
 
-docker-compose build
-docker-compose up -d
+## Getting Started
 
-2. CI/CD Pipeline
+### Prerequisites
 
-Configure Azure DevOps or GitHub Actions for continuous integration and deployment.
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [PostgreSQL](https://www.postgresql.org/download/)
+- [RabbitMQ](https://www.rabbitmq.com/download.html)
+- [Docker](https://www.docker.com/get-started) 
+- [Git](https://git-scm.com/downloads)
 
-Example CI/CD tasks include:
+### Setup Instructions
 
-Building and testing the solution.
+1. **Clone the Repository**
 
-Pushing Docker images to a registry.
+    ```bash
+    git clone https://github.com/felixojiambo/eshopreferenceapplication-openapi.git
+    cd eshopreferenceapplication-openapi
+    ```
 
-Deploying services to Kubernetes.
+2. **Configure Environment Variables**
 
-Observability
+    Create a `.env` file or use your preferred secrets management system to store sensitive information like database connection strings, JWT secrets, and API keys.
 
-Logging: Centralized using Serilog and Elasticsearch.
+3. **Set Up the Database**
 
-Metrics: Monitored via Prometheus and visualized in Grafana.
+    Ensure PostgreSQL is installed and running. Create the necessary databases for each service (e.g., `eShopIdentity`, `eShopCatalog`, etc.).
 
-Tracing: Distributed tracing enabled with OpenTelemetry.
+4. **Apply Migrations**
 
-Contribution Guidelines
+    For each service that uses Entity Framework Core:
 
-Follow coding standards and best practices (e.g., SOLID principles).
+    ```powershell
+    cd services/identity-service
+    dotnet ef database update
+    ```
 
-Write unit and integration tests for all new features.
+    Repeat for other services as needed.
 
-Document APIs and modules in the code and README files.
+5. **Run RabbitMQ**
 
-Use meaningful commit messages.
+    You can run RabbitMQ using Docker:
 
-License
+    ```bash
+    docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+    ```
 
-This project is licensed under the MIT License. See LICENSE for more details.
+    Access RabbitMQ Management at [http://localhost:15672](http://localhost:15672) with default credentials (`guest`/`guest`).
 
-Acknowledgments
+6. **Build and Run Services**
 
-Special thanks to all contributors and the open-source community for supporting the tools and frameworks used in this project.
+    For each microservice:
 
+    ```powershell
+    cd services/identity-service
+    dotnet run
+    ```
+
+    Repeat for other services. Ensure each service is configured with the correct connection strings and service dependencies.
+
+7. **Run Client Applications**
+
+    - **Web App**:
+
+        ```powershell
+        cd client-apps/web-app
+        dotnet run
+        ```
+
+    - **Mobile BFF**:
+
+        ```powershell
+        cd client-apps/mobile-bff
+        dotnet run
+        ```
+
+---
+
+## Project Structure
+
+```plaintext
+eshop/
+├── services/
+│   ├── identity-service/
+│   ├── catalog-service/
+│   ├── order-service/
+│   ├── basket-service/
+│   ├── payment-service/
+│   └── webhook-service/
+├── client-apps/
+│   ├── mobile-bff/
+│   └── web-app/
+├── shared/
+│   ├── event-bus/
+│   └── observability/
+├── README.md
+└── .gitignore
